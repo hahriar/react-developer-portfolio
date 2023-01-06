@@ -4,21 +4,29 @@
 }
 :root{
     --button-bg: #FD6E0A;
-    --text-color: #6C6C6C;
+    --text-color: #757575;
+    --btn-text-color: white;
 }
 
 /* Header and Navigation styles */
+.header{
+    background: #FFF8F3;
+    background-image: url('./header_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 3.125rem 12.5rem;
 }
 nav ul{
     display: flex;
+    align-items: center;
 }
 nav li{
     list-style: none;
-    margin-left: 50px;
+    margin-left: 3.125rem;
 }
 .nav-title {
     font-weight: 800;
@@ -27,3 +35,46 @@ nav li{
 .text-primary{
     color: var(--button-bg);
 }
+.nav-button{
+    color: var(--btn-text-color);
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: 0;
+    padding: 1.125rem 2.1rem;
+    height: 3.75rem;
+    border-radius: 0.300rem;
+    background-color: var(--button-bg);
+}
+
+.banner{
+    display: flex;
+    margin: 0 12.5rem;
+    align-items: center;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 5.313rem;
+    
+}
+.banner-sub-title{
+    font-weight: 600;
+    font-size: 2.813rem;
+}
+.banner-discription{
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+}
+.second-button{
+    color: var(--button-bg);
+    margin-left: 1.25rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border:solid;
+    border-width: 0.0100rem;
+    padding: 1rem 2.1rem;
+    height: 3.75rem;
+    border-radius: 0.300rem;
+    background-color: var(--btn-text-color);
+}
+
